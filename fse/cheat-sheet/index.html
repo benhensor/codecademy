@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=!, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>CSS Position</title>
+</head>
+<body>
+  <h1>CSS Position Cheat Sheet</h1>
+  <h2>Position Tags</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Tag</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="code"><code>&lt;static&gt;</code></td>
+        <td>static</td>
+        <td>Default value. Elements are positioned according to the normal flow of the document.</td>
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;relative&gt;</code></td>
+        <td>relative</td>
+        <td>Relative to itself. Elements are positioned relative to their normal position, allowing top, right, bottom, left adjustments.</td>
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;absolute&gt;</code></td>
+        <td>absolute</td>
+        <td>Relative to the nearest positioned ancestor. Element is removed from the normal flow and placed relative to its closest positioned ancestor.</td>
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;fixed&gt;</code></td>
+        <td>fixed</td>
+        <td>Relative to the viewport. Element is removed from the normal flow and positioned relative to the browser window, staying in the same place even when scrolled.</td>
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;sticky&gt;</code></td>
+        <td>sticky</td>
+        <td>Switches between relative and fixed. Element is treated as relative until it crosses a specified threshold within the viewport, at which point it is treated as fixed.</td>
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;top&gt;</code></td>
+        <td>top</td>
+        <td rowspan="4">Offsets from respective edges. Used with position to place the element by specifying values from the top, right, bottom, and left edges of the nearest positioned ancestor.</td>
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;right&gt;</code></td>
+        <td>right</td>
+
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;bottom&gt;</code></td>
+        <td>bottom</td>
+     
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;left&gt;</code></td>
+        <td>left</td>
+  
+      </tr>
+      <tr>
+        <td class="code"><code>&lt;z-index&gt;</code></td>
+        <td>z-index</td>
+        <td>Stacking order. Controls the stack order of an element, useful when elements overlap; higher values are closer to the front.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
