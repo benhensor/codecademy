@@ -1,2 +1,3 @@
-# codecademy-fse
-A repository for all challenges and learning tasks for Codecademy's Full Stack Engineering course
+### Codecademy
+
+Welcome to my repository for Codecademy's Full Stack Engineering course. This repo will contain all of my project files and learning tasks.
