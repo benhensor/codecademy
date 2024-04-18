@@ -52,6 +52,7 @@ th {
   background-color: #207ab7;
   color: white;
   font-weight: bold;
+  border-right: 1px solid #175984;
 }
 
 /* Code styling */
