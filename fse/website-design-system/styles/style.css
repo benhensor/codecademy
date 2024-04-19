@@ -57,6 +57,29 @@ section {
   padding: 30px 0;
 }
 
+.home-link {
+  display: flex;
+  justify-content: left;
+  margin-top: 40px;
+}
+/* Anchor styling */
+a.home {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0B3948;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #2EBFA5;
+  transition: all 0.3s;
+}
+
+a.home:hover {
+  background-color: #2EBFA5;
+  color: #FFF;
+}
+
 header {
   width: 100%;
   padding: 40px 0;
