@@ -11,6 +11,28 @@ body {
   padding: 20px;
   background-color: #f4f4f9;
   color: #333;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Anchor styling */
+a.home {
+  position: relative;
+  top: 27px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #205493;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #205493;
+  transition: all 0.3s;
+}
+
+a.home:hover {
+  background-color: #205493;
+  color: #FFF;
 }
 
 /* Heading styles */
