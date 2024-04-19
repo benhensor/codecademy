@@ -1,0 +1,126 @@
+/*
+
+  These styles illustrate a technique for creating 'arrow heads' using ::before and ::after stylings and borders
+
+*/
+
+.breadcrumb {
+  text-align: left;
+}
+
+.breadcrumb a {
+  float: left;
+  color: #fff;
+  background: darkcyan;
+  text-decoration: none;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
+}
+.breadcrumb .attribute a {
+  background-color: inherit;
+}
+.breadcrumb .location a::before,
+.breadcrumb .location a::after {
+  content: "";
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+
+.breadcrumb .location a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: darkcyan;
+}
+.breadcrumb .location a::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+
+.attribute a{
+  color: gray;
+}
+
+.breadcrumb .location a:hover {
+  background-color: blue;
+}
+.breadcrumb .location a:hover::before {
+  border-color: blue;
+  border-left-color: transparent;
+}
+.breadcrumb .location a:hover::after {
+  border-left-color: blue;
+}
+
+/*
+
+Here is a better implementation that doesn't have the annoying 1px white bar at the bottom of each arrow
+
+
+.breadcrumb {
+  list-style: none;
+  overflow: hidden;
+}
+.breadcrumb li {
+  float: left;
+}
+
+.breadcrumb li a {
+  color: #FFF;
+  background: #203D00;
+  text-decoration: none;
+  padding: 10px 0 10px 40px;
+  position: relative;
+  display: block;
+  float: left;
+  transition: .3s;
+}
+
+.breadcrumb li a::after { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent; 
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #203D00;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  left: 100%;
+  z-index: 2;
+  transition: .3s;
+}
+
+.breadcrumb li a::before { 
+  content: " "; 
+  display: block; 
+  width: 0; 
+  height: 0;
+  border-top: 50px solid transparent;       
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; 
+  margin-left: 2px;
+  left: 100%;
+  z-index: 1; 
+  transition: .3s;
+}
+
+.breadcrumb li a:hover {
+  background: #448000;
+}
+
+.breadcrumb li a:hover::after {
+  border-left-color: #448000; 
+}
+
+
+*/
