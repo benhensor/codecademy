@@ -1,3 +1,26 @@
+/* Anchor styling */
+a.home {
+  position: relative;
+  top: 30px;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #448000;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #448000;
+  margin-bottom: 40px;
+  transition: all 0.3s;
+}
+
+a.home:hover {
+  background-color: #448000;
+  color: #FFF;
+}
+
 .breadcrumb {
   list-style: none;
   overflow: hidden;
