@@ -33,13 +33,10 @@
 
 html {
   font-size: 1.6rem;
-  overflow-x: hidden;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
-  
-  scroll-behavior: smooth;
 }
 
 a {
@@ -190,8 +187,7 @@ header {
 /* MAIN */
 
 main {
-  position: relative;
-  top: 126px;
+  min-height: calc(100vh - 260px);
 }
 
 @media screen and (max-width: 999px) {
@@ -203,13 +199,20 @@ main {
 /* HERO */
 
 #hero {
-  background-image:
-    url('./assets/catAlpha.webp'),
-    radial-gradient(circle at center right, #0F5F76, #27B3BA);
-  background-repeat: no-repeat;
-  background-size: cover 50%;
-  background-position: 80% 20%;
-  aspect-ratio: 16/9;
+  background: radial-gradient(circle at center right, #0F5F76, #27B3BA);
+  height: 1200px;
+  position: relative;
+}
+
+#hero img {
+  position: absolute;
+  top: 50%;
+  right: 35%;
+  transform: translate(50%, -50%);
+  width: 700px;
+  height: auto;
+  object-fit: cover;
+  z-index: 0;
 }
 
 .hero-content {
@@ -218,9 +221,11 @@ main {
   justify-content: center;
   align-items: left;
   gap: 20px;
+  width: 100%;
   max-width: 1000px;
   height: 100%;
   margin: 0 auto;
+  z-index: 10000;
 }
 
 .hero-content h1 {
@@ -257,10 +262,19 @@ main {
 
 @media screen and (max-width: 999px) {
   #hero {
-    background-size: cover;
-    background-position: right top;
-    aspect-ratio: 4/3;
+    height: 1000px;
     padding: var(--m-tablet);
+  }
+
+  #hero img {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    width: 700px;
+    height: auto;
+    object-fit: cover;
+    z-index: 0;
   }
 
   .hero-content {
@@ -268,6 +282,7 @@ main {
     justify-content: flex-end;
     padding-bottom: 5rem;
     gap: 15px;
+    z-index: 10000;
   }
 
   .hero-content h1 {
@@ -302,7 +317,7 @@ main {
   }
   
   .hero-content p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   
   .hero-content a {
@@ -395,11 +410,10 @@ main {
 /* FOOTER */
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   background: #111;
   padding: 20px 0;
+  z-index: 1000;
 }
 
 .footer-content {

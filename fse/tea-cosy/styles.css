@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Anchor styling */
+a.home {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: all 0.3s;
+}
+
+a.home:hover {
+  background-color: #ccc;
+  color: #111;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 22px;
+  color: seashell;
+  background-color: black; 
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid seashell;
+  padding: 0 10px;
+  height: 69px;
+}
+
+header img {
+  height: 50px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+header nav ul li a {
+  color: seashell;
+}
+
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#hero img {
+  height: 700px;
+}
+
+#hero article {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  text-align: center;
+  background-color: black;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#monthly-teas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px 0;
+}
+
+.teas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 50px 0;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.tea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.tea img {
+  width: 300px;
+  height: 200px;
+}
+
+#locations {
+  background: url('./assets/img-locations-background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#locations h2 {
+  margin-bottom: 15px;
+}
+
+.locations-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 0;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  aspect-ratio: 4/3;
+  gap: 20px;
+  background-color: black;
+  padding: 10px;
+}
+
+footer {
+  margin: 0 20px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  gap: 20px;
+  padding: 20px 0;
+}
