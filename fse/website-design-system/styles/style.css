@@ -52,6 +52,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+
+}
+
 section {
   margin: 40px 0;
   padding: 30px 0;
@@ -235,6 +239,11 @@ main {
   grid-gap: 20px;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
 .button {
   display: flex;
   flex-direction: column;
@@ -254,7 +263,7 @@ main {
   margin-bottom: 10px;
 }
 
-.buttons-grid .button:nth-child(1) button {
+.column:nth-child(1) .button:nth-child(1) button {
   background: var(--primary-color);
 }
 
@@ -357,3 +366,50 @@ main {
   font-size: 1.2rem;
   color: var(--error-color);
 }
+
+
+@media screen and (max-width: 999px) {
+  a.home {
+    margin-left: 2rem;
+  }
+  section {
+    padding: 30px 2rem;
+  }
+  .header-content {
+    flex-direction: column;
+    padding: 0 2rem;
+  }
+  .colors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .type-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  a.home {
+    margin-left: 1rem;
+  }
+  section {
+    padding: 30px 1rem;
+  }
+  .header-content {
+    padding: 0 1rem;
+  }
+  .buttons-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .inputs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 436px) {
+  .buttons-grid {
+    grid-template-columns: 1fr;
+  }
+}
+

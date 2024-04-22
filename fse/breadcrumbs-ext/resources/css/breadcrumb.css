@@ -90,3 +90,15 @@ a.home:hover {
 .breadcrumb li a:hover::after {
   border-left-color: #448000; /* Changes the border color of the arrow part on hover */
 }
+
+@media screen and (max-width: 600px) {
+  .breadcrumb li a {
+    padding: 10px 0 10px 20px;
+  }
+  .breadcrumb li a::after {
+    border-left: 15px solid #203D00;
+  }
+  .breadcrumb li a::before {
+    border-left: 15px solid white;
+  }
+}
