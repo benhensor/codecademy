@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="./main.js"></script>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+  <title>Paprback</title>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="home">
+    <div class="header-top">
+      <div class="logo">
+        <a href="#home"><img src="./assets/icons/paprback_logo.svg" alt="A logo for Paprback"></a>
+      </div>
+      <div class="user">
+        <button class="user-signup">Sign Up</button>
+        <button class="user-login">Log In</button>
+        <button class="nav-mobile"><img src="./assets/icons/menu.svg" alt="heart icon"></button>
+      </div>
+    </div>
+    <div class="header-bottom">
+      
+      <nav class="nav-desktop">
+        <ul>
+          <li><a href="#browse">Browse</a></li>
+          <li><a href="#listings">Listings</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div id="hero">
+    <div class="content">
+      <h1>Paprback</h1>
+      <h2>Discover books and get reading...</h2>
+    </div>
+    <button>Get Started</button>
+  </div>
+
+  <!-div- CTA Section -->
+  <div id="cta">
+    <img src="./assets/img/paper.webp" alt="paper texture">
+    <div class="content">
+      <div class="column">
+        <h3>Exchange...</h3>
+        <p>Do you have old books lying around that you would be happy to exchange for something new to read? Connect with people near you and arrange a swap.</p>
+      </div>
+      <div class="column">
+        <h3>Donate...</h3>
+        <p>Need to offload your old and unwanted books? Simply create a listing using our easy to use listing feature and see your books go to a good home.</p>
+      </div>
+      <div class="column">
+        <h3>Discover...</h3>
+        <p>Finding it hard to choose your next book? Here you can browse for books, get recommendations, read reviews from our members and discover your next reading adventure.</p>
+      </div>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- Browse Section -->
+    <section id="browse">
+      <h2>Discover Books</h2>
+      <div class="search">
+        <input type="text" placeholder="Search...">
+      </div>
+      <div class="books-grid">
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/to-kill-a-mockingbird.webp" alt="To Kill a Mockingbird">
+            <img class="heart" src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>To Kill a Mockingbird</h4>
+          <h5>Harper Lee</h5>
+          <p><span>4.3</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/1984.webp" alt="1984">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>1984</h4>
+          <h5>George Orwell</h5>
+          <p><span>2.1</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/pride-and-predjudice.webp" alt="Pride and Prejudice">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Pride and Prejudice</h4>
+          <h5>Jane Austen</h5>
+          <p><span>7.9</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/catcher-in-the-rye.webp" alt="The Catcher in the Rye">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Catcher in the Rye</h4>
+          <h5>J.D. Salinger</h5>
+          <p><span>1.5</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-lord-of-the-rings.webp" alt="The Lord of the Rings">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Lord of the Rings</h4>
+          <h5>J.R.R. Tolkien</h5>
+          <p><span>3.8</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-hobbit.webp" alt="The Hobbit">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Hobbit</h4>
+          <h5>J.R.R. Tolkien</h5>
+          <p><span>5.2</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/harry-potter-philosophers-stone.webp" alt="Harry Potter and the Philosopher's Stone">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Harry Potter and the Philosopher's Stone</h4>
+          <h5>J.K. Rowling</h5>
+          <p><span>8.6</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-great-gatsby.webp" alt="The Great Gatsby">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Great Gatsby</h4>
+          <h5>F. Scott Fitzgerald</h5>
+          <p><span>2.2</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/moby-dick-or-the-whale.webp" alt="Moby-Dick; or, The Whale">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Moby-Dick; or, The Whale</h4>
+          <h5>Herman Melville</h5>
+          <p><span>6.4</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/brave_new_world.webp" alt="Brave New World">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Brave New World</h4>
+          <h5>Aldous Huxley</h5>
+          <p><span>0.8</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/adventures-of-huckleberry-finn.webp" alt="The Adventures of Huckleberry Finn">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Adventures of Huckleberry Finn</h4>
+          <h5>Mark Twain</h5>
+          <p><span>9.9</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-lion-the-witch-and-the-wardrobe.webp" alt="The Lion, the Witch & the Wardrobe">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Lion, the Witch & the Wardrobe</h4>
+          <h5>C.S. Lewis</h5>
+          <p><span>3.6</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-alchemist.webp" alt="The Alchemist">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Alchemist</h4>
+          <h5>Paulo Coelho</h5>
+          <p><span>1.2</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-picture-of-dorian-gray.webp" alt="The Picture of Dorian Gray">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Picture of Dorian Gray</h4>
+          <h5>Oscar Wilde</h5>
+          <p><span>4.7</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/frankenstein.webp" alt="Frankenstein">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Frankenstein</h4>
+          <h5>Mary Shelley</h5>
+          <p><span>8.1</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-hunger-games.webp" alt="The Hunger Games">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Hunger Games</h4>
+          <h5>Suzanne Collins</h5>
+          <p><span>7.4</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/gone-girl.webp" alt="Gone Girl">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Gone Girl</h4>
+          <h5>Gillian Flynn</h5>
+          <p><span>0.3</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-girl-on-the-train.webp" alt="The Girl on the Train">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Girl on the Train</h4>
+          <h5>Paula Hawkins</h5>
+          <p><span>6.8</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-book-thief.webp" alt="The Book Thief">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Book Thief</h4>
+          <h5>Markus Zusak</h5>
+          <p><span>2.7</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-kite-runner.webp" alt="The Kite Runner">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Kite Runner</h4>
+          <h5>Khaled Hosseini</h5>
+          <p><span>4.5</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-da-vinci-code.webp" alt="The Da Vinci Code">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Da Vinci Code</h4>
+          <h5>Dan Brown</h5>
+          <p><span>1.7</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-fault-in-our-stars.webp" alt="The Fault in Our Stars">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Fault in Our Stars</h4>
+          <h5>John Green</h5>
+          <p><span>5.1</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-help.webp" alt="The Help">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Help</h4>
+          <h5>Kathryn Stockett</h5>
+          <p><span>9.5</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/maze-runner.webp" alt="The Maze Runner">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Maze Runner</h4>
+          <h5>James Dashner</h5>
+          <p><span>0.9</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-girl-with-the-dragon-tattoo.webp" alt="The Girl with the Dragon Tattoo">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Girl with the Dragon Tattoo</h4>
+          <h5>Stieg Larsson</h5>
+          <p><span>3.4</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-giver.webp" alt="The Giver">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Giver</h4>
+          <h5>Lois Lowry</h5>
+          <p><span>7.7</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-shining.webp" alt="The Shining">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Shining</h4>
+          <h5>Stephen King</h5>
+          <p><span>4.2</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/girl-with-a-pearl-earring.webp" alt="The Girl with the Pearl Earring">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Girl with the Pearl Earring</h4>
+          <h5>Tracy Chevalier</h5>
+          <p><span>2.0</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-lovely-bones.webp" alt="The Lovely Bones">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Lovely Bones</h4>
+          <h5>Alice Sebold</h5>
+          <p><span>8.3</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-road.webp" alt="The Road">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Road</h4>
+          <h5>Cormac McCarthy</h5>
+          <p><span>5.5</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/the-handmaids-tale.webp" alt="The Handmaid's Tale">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>The Handmaid's Tale</h4>
+          <h5>Margaret Atwood</h5>
+          <p><span>6.1</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/use-of-weapons.webp" alt="Use of Weapons">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Use of Weapons</h4>
+          <h5>Iain M. Banks</h5>
+          <p><span>3.1</span> miles</p>
+        </div>
+        <div class="book">
+          <div class="book-cover">
+            <img src="./assets/books/great-expectations.webp" alt="Great Expectations">
+            <img class="heart"  src="./assets/icons/heart.svg" alt="heart icon">
+          </div>
+          <h4>Great Expectations</h4>
+          <h5>Charles Dickens</h5>
+          <p><span>7.2</span> miles</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listings Section -->
+    <section id="listings">
+      <h2>List Your Books</h2>
+
+      <div class="content">
+
+        <div class="listing-form">
+          <div>
+            <input type="text" placeholder="ISBN...">
+            <button>Search</button>
+          </div>
+
+          <div>
+            <button>Scan Barcode<img src="#" alt="heart icon"></button>
+            <img src="#" alt="Example Book">
+            <div class="book-cover">
+          </div>
+
+          <img src="" alt=""></div>
+          <input type="text" placeholder="Title...">
+          <input type="text" placeholder="Author...">
+          <input type="text" placeholder="Edition...">
+          <select name="condition" id="condition">
+            <option value="new">New</option>
+            <option value="good">Good</option>
+            <option value="fair">Fair</option>
+            <option value="poor">Poor</option>
+          </select>
+          <button class="submit">List Book</button>
+        </div>
+
+        <div class="carousels">
+          <div class="user-listings">
+            <h3>Your Listings</h3>
+            <div class="carousel">
+              <img src="./assets/icons/chevron-left.svg" alt="Chevron Left">
+              <div class="books">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+              <img src="./assets/icons/chevron-right.svg" alt="Chevron Right">
+            </div>
+          </div>
+          <div class="user-listings">
+            <h3>Recommended</h3>
+            <div class="carousel">
+              <img src="./assets/icons/chevron-left.svg" alt="Chevron Left">
+              <div class="books">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+              </div>
+              <img src="./assets/icons/chevron-right.svg" alt="Chevron Right">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About Paprback</h2>
+      <div class="content">
+        <div>
+          <h3>Our Mission</h3>
+          <p>At Paprback, we believe that everyone should have access to books. We are passionate about reading and want to make it easy for people to discover new books, share their old books and connect with other book lovers.</p>
+        </div>
+        <div>
+          <h3>Our Story</h3>
+          <p>Paprback was founded in 2021 by a group of friends who wanted to create a platform where people could share their love of reading. We are a small team of book lovers who are dedicated to making reading more accessible to everyone.</p>
+        </div>
+      </div>
+      <button>Get Started</button>
+    </section>
+
+    <section id="faq">
+      <h2>FAQ</h2>
+      <div class="content">
+        <div class="faq-item">
+          <button class="faq-question">How does Paprback work? <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="down arrow"></button>
+          <div class="faq-answer">
+            <p>Paprback is a platform that allows you to discover new books, share your old books, and connect with other book lovers. You can search for books, create listings, and connect with other users to arrange swaps or donations.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I list my books? <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="down arrow"></button>
+          <div class="faq-answer">
+            <p>To list your books on Paprback, simply create an account, search for your book by ISBN or title, and fill in the details. You can then add your book to your listings and connect with other users to arrange swaps or donations.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">How do I connect with other users? <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="down arrow"></button>
+          <div class="faq-answer">
+            <p>To connect with other users on Paprback, simply search for books, browse listings, and send a message to arrange a swap or donation. You can also join our community forums to chat with other book lovers and get recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="content">
+      <div class="links">
+        <h3>CUSTOMER SERVICE</h3>
+        <ul>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Customer Service FAQ</a></li>
+          <li><a href="#">Shipping & Delivery</a></li>
+          <li><a href="#">Company Information</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy & Cookies</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+      </div>
+      <div class="logo">
+        <img src="./assets/icons/paprback_logo_white.svg" alt="Paprback books logo">
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
