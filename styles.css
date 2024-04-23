@@ -202,7 +202,8 @@ main {
 
 #hero {
   height: 85em;
-  background: radial-gradient(circle at center right, #0F5F76, #27B3BA)
+  background: radial-gradient(circle at center right, #0F5F76, #27B3BA);
+  overflow-x: hidden;
 }
 
 .hero-content {
@@ -413,6 +414,9 @@ main {
 }
 #animal-task-list::before {
   background: linear-gradient(90deg, #3023ae, #eb7f7b);
+}
+#fotomatic::before {
+  background: linear-gradient(90deg, #f12711, #f5af19);
 }
 
 .exercise-content {
