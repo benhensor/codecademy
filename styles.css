@@ -353,6 +353,12 @@ main {
   }
 }
 
+@media screen and (max-width: 499px) {
+  #hero {
+    overflow-x: hidden;
+  }
+}
+
 
 /* EXERCISES */
 
