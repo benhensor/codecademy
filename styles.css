@@ -489,7 +489,7 @@ main {
 
 @media screen and (max-width: 768px) {
   .exercises-content {
-    padding: var(--m-mobile);
+    padding: 0 4rem;
   }
   .exercises-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -497,6 +497,11 @@ main {
 }
 
 @media screen and (max-width: 499px) {
+  .exercises-content h2 {
+    font-size: 5rem;
+    color: #27B3BA;
+    margin-bottom: 40px;
+  }
   .exercises-grid {
     grid-template-columns: 1fr;
   }
