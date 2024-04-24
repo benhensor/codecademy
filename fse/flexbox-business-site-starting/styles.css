@@ -307,6 +307,15 @@ header .user-login {
               inset -2px -2px 8px rgba(0, 0, 0, 0.4);
 }
 
+#hero button:hover {
+  background: #ffcc00;
+}
+
+#hero button:active {
+  box-shadow: inset -2px -2px 4px rgba(255, 248, 212, 0.81),
+              inset 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
 @media only screen and (max-width: 1199px) {
   
 }
@@ -370,9 +379,8 @@ header .user-login {
 
 #cta img {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
   width: 100%;
   max-width: 100%;
   mix-blend-mode: multiply;
@@ -429,8 +437,7 @@ header .user-login {
 
 @media only screen and (max-width: 450px) {
   #cta img {
-    transform: translate(-50%, -50%), rotate(-90deg);
-    max-width: 200%;
+    scale: 1.5;
   }
   #cta h3 {
     font-size: 2rem;
@@ -542,8 +549,17 @@ header .user-login {
 
 /* LISTING STYLES */
 
+#listings {
+  padding: 5rem 0;
+  text-align: center;
+  background: #f9f9f9;
+}
+
 #listings .content {
+  max-width: 120rem;
+  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 5rem;
@@ -554,63 +570,217 @@ header .user-login {
 }
 
 .listing-form {
+  display: flex;
+  gap: 5rem;
+}
+
+.listing-form .column:first-child {
   flex: 1;
+}
+
+.listing-form .column:last-child {
+  flex: 2;
+}
+
+.listing-form .column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 2rem;
-  padding: 3rem 5rem;
-  background-color: #eee;
 }
 
-.listing-form div {
+.listing-form .book-image {
   width: 100%;
+}
+
+.listing-form .book-image img {
+  max-width: 100%;  
+}
+
+.listing-form .input-group {
   display: flex;
 }
 
-.listing-form div:nth-child(2) {
-  flex-direction: column;
-}
-
-.listing-form input,
-.listing-form select {
-  width: 100%;
-  padding: 0.5em;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.listing-form .submit {
-  width: 100%;
-  background: var(--orange);
-  color: #fff;
-  padding: 0.5em 0;
-  font-size: 1.6rem;
+.listing-form .btn {
+  padding: 0.875rem 2em;
   border: none;
   border-radius: 5px;
 }
 
-.carousels {
-  flex: 2;
+.input-group .btn {
+  background: var(--green);
+  color: #fff;
+  margin-left: 2rem;
 }
 
+.btn.scan {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scan img {
+  width: 2rem;
+  filter: invert(0.3);
+  margin-left: 2rem;
+}
+
+.column input,
+.column select {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.875em;
+}
+
+.btn.submit {
+  background: var(--orange);
+  color: #fff;
+  padding: 1.5rem 2em;
+}
+
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.carousel-container h3 {
+  font-size: 2rem;
+  color: var(--dkGreen);
+  margin-bottom: 4rem;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.carousel .arrow {
+  cursor: pointer;
+  width: 2rem;
+}
+
+.carousel .books {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: nowrap;
+  gap: 5rem;
+}
+
+.carousel .books .book {
+  position: relative;
+  width: 15rem;
+}
+
+.carousel .books .book img {
+  width: 100%;
+  display: block;
+}
+ 
 @media only screen and (max-width: 1199px) {
-  
+
 }
 
 @media only screen and (max-width: 767px) {
-  #listings .content {
+  .listing-form {
     flex-direction: column;
-    gap: 5rem;
+    max-width: 50rem;  
+  }
+  .carousel .books .book:nth-child(4) {
+    display: none;
   }
 }
 
 @media only screen and (max-width: 450px) {
-  
+  .user-listings .book:nth-child(2) {
+    display: none;
+  }
+  .listing-form {
+    flex-direction: column;
+    max-width: 40rem;  
+  }
+  .carousel .books .book:nth-child(3) {
+    display: none;
+  }
+  .carousel .arrow {
+    width: 1.5rem;
+  }
 }
 
 /* ABOUT STYLES */
+
+#about {
+  padding: 5rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#about img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  filter: grayscale(100%);
+  mix-blend-mode: multiply;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+#about .content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  z-index: 1;
+}
+
+#about .content div:first-child {
+  align-items: left;
+}
+
+#about h3 {
+  color: var(--dkGreen);
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+
+
+#about p {
+  font-size: 1.6rem;
+  color: #777;
+  margin-bottom: 2rem;
+}
+
+#about button {
+  width: 30rem;
+  background: var(--orange);
+  color: #fff;
+  padding: 1em 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-wrap: none;
+  border: none;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 4px rgba(255, 248, 212, 0.81),
+              inset -2px -2px 8px rgba(0, 0, 0, 0.4);
+  transition: all .12s;
+}
+
+#about button:hover {
+  background: #ffcc00;
+}
+
+#about button:active {
+  box-shadow: inset -2px -2px 4px rgba(255, 248, 212, 0.81),
+              inset 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
 
 @media only screen and (max-width: 1199px) {
   
@@ -626,10 +796,32 @@ header .user-login {
 
 /* FAQ STYLES */
 
+#faq {
+  background: #f9f9f9;
+  text-align: center;
+  padding: 5rem 0;
+}
+
+#faq h2 {
+  margin-bottom: 5rem;
+}
+
+#faq .content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
 .faq-answer {
   display: none;
   padding: 8px;
   border-top: 1px solid #ccc;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #777;
+  text-align: justify;
 }
 
 .faq-question {
@@ -644,16 +836,27 @@ header .user-login {
   border-bottom: 1px solid #ccc;
 }
 
+.faq-arrow {
+  float: right; /* Positions the arrow to the right of the text */
+  transition: transform 0.3s ease;
+}
+
 @media only screen and (max-width: 1199px) {
-  
+  #faq .content {
+    max-width: 60rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
-  
+  #faq .content {
+    max-width: 45rem;
+  }
 }
 
-@media only screen and (max-width: 450px) {
-  
+@media only screen and (max-width: 546px) {
+  #faq .content {
+    max-width: 30rem;
+  }
 }
 
 /* FOOTER STYLES */
@@ -673,16 +876,56 @@ footer .content {
   justify-content: flex-start;
 }
 
+footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer h3 {
+  font-size: 1.6rem;
+  color: #ccc;
+
+}
+
+footer li {
+  margin-bottom: 0.875rem;
+}
+
+footer a {
+  color: #777;
+  font-size: 1.2rem;
+  transition: all .12s;
+}
+
+footer a:hover {
+  color: #aaa;
+}
+
 footer .logo {
   position: absolute;
   top: 5em;
   left: 50%;
   transform: translateX(-50%);
   width: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
 }
 
 footer .logo img {
   max-width: 100%;
+}
+
+footer .home {
+  color: #fff;
+  font-size: 1.6rem;
+  letter-spacing: 0.2em;
+  background: #555;
+  padding: 0.5em 2em;
+  border-radius: 5px;
 }
 
 @media only screen and (max-width: 1199px) {
@@ -697,8 +940,9 @@ footer .logo img {
 
 @media only screen and (max-width: 450px) {
   footer .content {
-    padding: 5em 1em;
+    padding: 15em 1em 5em 1em;
     justify-content: center;
+    text-align: center;
   }
 
   footer .links {

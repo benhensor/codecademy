@@ -362,30 +362,30 @@ main {
 
 /* EXERCISES */
 
-#exercises {
-  background: #111;
+#exercises,
+#projects {
   padding: 15em 0;
 }
 
-.exercises-content {
+section .content {
   max-width: 1000px;
   margin: 0 auto;
   color: #ccc;
 }
 
-.exercises-content h2 {
+section .content h2 {
   font-size: 7rem;
   color: #27B3BA;
   margin-bottom: 40px;
 }
 
-.exercises-grid {
+section .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.exercise {
+section .item {
   position: relative;
   display: flex;
   justify-content: center;
@@ -396,7 +396,7 @@ main {
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
 }
 
-.exercise::before {
+section .item::before {
   content: '';
   position: absolute;  /* Position relative to the parent */
   top: 0; left: 0;  /* Align the pseudo-element */
@@ -425,7 +425,11 @@ main {
   background: linear-gradient(90deg, #f12711, #f5af19);
 }
 
-.exercise-content {
+#business-site::before {
+  background: linear-gradient(90deg, #f12711, #f5af19);
+}
+
+section .item-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -440,7 +444,7 @@ main {
   z-index: 1;
 }
 
-.exercise-content h3 {
+section .item-content h3 {
   position: absolute;
   top: -15px;
   left: 50%;
@@ -455,13 +459,13 @@ main {
   display: inline;
   color:#fff;
 }
-.exercise-content p {
+section .item-content p {
   font-size: 1.6rem;
   margin: 10px 0;
   color: #fff;
 }
 
-.exercise-content a {
+section .item-content a {
   display: inline-block;
   padding: 10px 20px;
   background: #B26304;
@@ -472,40 +476,41 @@ main {
   box-shadow: var(--btn-primary-bs);
   transition: all .12s;
 }
-.exercise-content a:hover {
+section .item-content a:hover {
   background: #ba6f14;
 }
 
-.exercise-content a:active {
+section .item-content a:active {
   box-shadow: var(--btn-primary-bs-active);
 }
 
 @media screen and (max-width: 999px) {
-  .exercises-content {
+  section .item-content {
     text-align: center;
     padding: var(--m-tablet);
   }
 }
 
 @media screen and (max-width: 768px) {
-  .exercises-content {
+  section .content {
     padding: 0 4rem;
   }
-  .exercises-grid {
+  section .grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media screen and (max-width: 499px) {
-  .exercises-content h2 {
+  section .content h2 {
     font-size: 5rem;
     color: #27B3BA;
     margin-bottom: 40px;
   }
-  .exercises-grid {
+  section .grid {
     grid-template-columns: 1fr;
   }
 }
+
 
 /* FOOTER */
 

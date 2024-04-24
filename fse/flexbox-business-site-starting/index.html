@@ -15,7 +15,7 @@
   <header id="home">
     <div class="header-top">
       <div class="logo">
-        <a href="#home"><img src="./assets/icons/paprback_logo.svg" alt="A logo for Paprback"></a>
+        <a href="../../index.html#business-site"><img src="./assets/icons/paprback_logo.svg" alt="A logo for Paprback"></a>
       </div>
       <div class="user">
         <button class="user-signup">Sign Up</button>
@@ -375,71 +375,74 @@
     </section>
 
     <!-- Listings Section -->
-    <section id="listings">
-      <h2>List Your Books</h2>
+<div id="listings">
+  <h2>List Your Books</h2>
 
-      <div class="content">
-
-        <div class="listing-form">
-          <div>
-            <input type="text" placeholder="ISBN...">
-            <button>Search</button>
-          </div>
-
-          <div>
-            <button>Scan Barcode<img src="#" alt="heart icon"></button>
-            <img src="#" alt="Example Book">
-            <div class="book-cover">
-          </div>
-
-          <img src="" alt=""></div>
-          <input type="text" placeholder="Title...">
-          <input type="text" placeholder="Author...">
-          <input type="text" placeholder="Edition...">
-          <select name="condition" id="condition">
-            <option value="new">New</option>
-            <option value="good">Good</option>
-            <option value="fair">Fair</option>
-            <option value="poor">Poor</option>
-          </select>
-          <button class="submit">List Book</button>
+  <section class="content">
+    <!-- Book Listing Form -->
+    <div class="listing-form">
+      <div class="column">
+        <div class="book-image">
+          <img src="./assets/books/the-book-thief.webp" alt="The Book Thief">
         </div>
-
-        <div class="carousels">
-          <div class="user-listings">
-            <h3>Your Listings</h3>
-            <div class="carousel">
-              <img src="./assets/icons/chevron-left.svg" alt="Chevron Left">
-              <div class="books">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-              </div>
-              <img src="./assets/icons/chevron-right.svg" alt="Chevron Right">
-            </div>
-          </div>
-          <div class="user-listings">
-            <h3>Recommended</h3>
-            <div class="carousel">
-              <img src="./assets/icons/chevron-left.svg" alt="Chevron Left">
-              <div class="books">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-              </div>
-              <img src="./assets/icons/chevron-right.svg" alt="Chevron Right">
-            </div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <section id="about">
+      <div class="column">
+        <div class="input-group">
+          <input type="text" placeholder="ISBN...">
+          <button class="btn search">Search</button>
+        </div>
+        <button class="btn scan">Scan Barcode <img src="./assets/icons/camera.svg" alt="camera icon"></button>
+        <input type="text" value="The Book Thief">
+        <input type="text" value="Markus Zusak">
+        <input type="text" placeholder="Edition...">
+        <select name="condition">
+          <option value="new">New</option>
+          <option value="good">Good</option>
+          <option value="fair">Fair</option>
+          <option value="poor">Poor</option>
+        </select>
+        <button class="btn submit">List Book</button>
+      </div>
+    </div>
+
+    <!-- Carousel for User Listings -->
+    <div class="carousel-container">
+      <h3>Your Listings</h3>
+      <div class="carousel">
+        <img class="arrow" src="./assets/icons/chevron-left.svg" alt="Chevron Left">
+        <div class="books">
+          <div class="book"><img src="./assets/books/girl-with-a-pearl-earring.webp" alt="The Girl with the Pearl Earring"></div>
+          <div class="book"><img src="./assets/books/the-lovely-bones.webp" alt="The Lovely Bones"></div>
+          <div class="book"><img src="./assets/books/the-road.webp" alt="The Road"></div>
+          <div class="book"><img src="./assets/books/the-handmaids-tale.webp" alt="The Handmaid's Tale"></div>
+        </div>
+        <img class="arrow" src="./assets/icons/chevron-right.svg" alt="Chevron Right">
+      </div>
+    </div>
+
+    <!-- Carousel for Recommendations -->
+    <div class="carousel-container">
+      <h3>Recommended</h3>
+      <div class="carousel">
+        <img class="arrow" src="./assets/icons/chevron-left.svg" alt="Chevron Left">
+        <div class="books">
+          <div class="book"><img src="./assets/books/frankenstein.webp" alt="Frankenstein"></div>
+          <div class="book"><img src="./assets/books/the-hunger-games.webp" alt="The Hunger Games"></div>
+          <div class="book"><img src="./assets/books/gone-girl.webp" alt="Gone Girl"></div>
+          <div class="book"><img src="./assets/books/the-girl-on-the-train.webp" alt="The Girl on the Train"></div>
+        </div>
+        <img class="arrow" src="./assets/icons/chevron-right.svg" alt="Chevron Right">
+      </div>
+    </div>
+  </section>
+</div>
+  
+
+    <div id="about">
       <h2>About Paprback</h2>
-      <div class="content">
+      <section class="content">
+        
         <div>
           <h3>Our Mission</h3>
           <p>At Paprback, we believe that everyone should have access to books. We are passionate about reading and want to make it easy for people to discover new books, share their old books and connect with other book lovers.</p>
@@ -448,33 +451,41 @@
           <h3>Our Story</h3>
           <p>Paprback was founded in 2021 by a group of friends who wanted to create a platform where people could share their love of reading. We are a small team of book lovers who are dedicated to making reading more accessible to everyone.</p>
         </div>
-      </div>
+        
+      </section>
       <button>Get Started</button>
-    </section>
+      
+    </div>
 
-    <section id="faq">
+    <div id="faq">
       <h2>FAQ</h2>
-      <div class="content">
+      <section class="content">
         <div class="faq-item">
-          <button class="faq-question">How does Paprback work? <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="down arrow"></button>
+          <button class="faq-question">How does Paprback work? 
+            <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="toggle arrow">
+          </button>
           <div class="faq-answer">
             <p>Paprback is a platform that allows you to discover new books, share your old books, and connect with other book lovers. You can search for books, create listings, and connect with other users to arrange swaps or donations.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">How do I list my books? <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="down arrow"></button>
+          <button class="faq-question">How do I list my books? 
+            <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="toggle arrow">
+          </button>
           <div class="faq-answer">
             <p>To list your books on Paprback, simply create an account, search for your book by ISBN or title, and fill in the details. You can then add your book to your listings and connect with other users to arrange swaps or donations.</p>
           </div>
         </div>
         <div class="faq-item">
-          <button class="faq-question">How do I connect with other users? <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="down arrow"></button>
+          <button class="faq-question">How do I connect with other users? 
+            <img class="faq-arrow" src="./assets/icons/chevron-down.svg" alt="toggle arrow">
+          </button>
           <div class="faq-answer">
             <p>To connect with other users on Paprback, simply search for books, browse listings, and send a message to arrange a swap or donation. You can also join our community forums to chat with other book lovers and get recommendations.</p>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </div>
 
   </main>
 
@@ -495,6 +506,7 @@
       </div>
       <div class="logo">
         <img src="./assets/icons/paprback_logo_white.svg" alt="Paprback books logo">
+        <a class="home" href="../../index.html#business-site">HOME</a>
       </div>
     </div>
   </footer>
