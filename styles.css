@@ -420,14 +420,16 @@ section .item::before {
   background: linear-gradient(to right, #249A80, #8DC0A5);  /* Your gradient */
 }
 #animal-task-list::before {
-  background: linear-gradient(90deg, #3023ae, #eb7f7b);
+  background: linear-gradient(45deg, #3023ae, #eb7f7b);
 }
 #fotomatic::before {
-  background: linear-gradient(90deg, #f12711, #f5af19);
+  background: linear-gradient(125deg, #f12711, #f5af19);
 }
-
 #business-site::before {
-  background: linear-gradient(90deg, #f12711, #f5af19);
+  background: linear-gradient(180deg, #0052ce, #d75f04);
+}
+#sausage-club::before {
+  background: linear-gradient(90deg, #11f154, #d819f5);
 }
 
 section .item-content {
