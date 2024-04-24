@@ -365,7 +365,7 @@ main {
 #exercises,
 #projects {
   background: #111;
-  padding: 15em 0;
+  padding: 15em 0 5em 0;
 }
 
 section .content {
