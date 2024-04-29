@@ -360,10 +360,11 @@ main {
 }
 
 
-/* EXERCISES & PROJECTS */
+/* EXERCISES & PROJECTS & JAVASCRIPT */
 
 #exercises,
-#projects {
+#projects,
+#javascript {
   background: #111;
   padding: 15em 0 5em 0;
 }
@@ -407,6 +408,8 @@ section .item::before {
   z-index: 0;
 }
 
+/* EXERCISES */
+
 #cheatsheet::before {
   background: linear-gradient(to right, #F26B87, #E7A557);  /* Your gradient */
 }
@@ -425,11 +428,20 @@ section .item::before {
 #fotomatic::before {
   background: linear-gradient(125deg, #f12711, #f5af19);
 }
+
+/* PROJECTS */
+
 #business-site::before {
   background: linear-gradient(180deg, #0052ce, #d75f04);
 }
 #sausage-club::before {
   background: linear-gradient(90deg, #11f154, #d819f5);
+}
+
+/* JAVASCRIPT */
+
+#number-guesser::before {
+  background: linear-gradient(45deg, #9011f1, #f5ba19);
 }
 
 section .item-content {
