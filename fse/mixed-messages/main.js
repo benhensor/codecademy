@@ -144,7 +144,7 @@ function generateQuote() {
 
 
 // Image slider with modal
-let sliderContaier = document.querySelector('.slider-contaier');
+let sliderContainer = document.querySelector('.slider-container');
 let slider = document.querySelector('.slider');
 let items = [...document.querySelectorAll('.slider-item')];
 let images = [...document.querySelectorAll('.img-div')];
@@ -184,7 +184,7 @@ function getScrollPos() {
 // update scroll position
 function scrollUpdate() {
   if (window.innerWidth > 768) { // disable scroll on mobile
-    sliderContaier.style.overflow = 'hidden';
+    sliderContainer.style.overflow = 'hidden';
     scrollPos = getScrollPos();
     if (clonesWidth + scrollPos >= sliderWidth) {
       window.scrollTo({top: 1})
