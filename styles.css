@@ -437,6 +437,9 @@ section .item::before {
 #sausage-club::before {
   background: linear-gradient(90deg, #11f154, #d819f5);
 }
+#mixed-messages::before {
+  background: linear-gradient(154deg, #004aaa, #00fbff);
+}
 
 /* JAVASCRIPT */
 
