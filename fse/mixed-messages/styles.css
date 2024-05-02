@@ -64,7 +64,7 @@ header a {
   text-decoration: none;
 }
 
-.slider-wrap {
+.slider-container {
   position: fixed;
   top: 10%;
   left: 10%;

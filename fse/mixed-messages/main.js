@@ -1,3 +1,5 @@
+// Arrays and functons for generating random quotes
+
 const historicalFigures = [
   "Socrates",
   "Cleopatra",
@@ -113,11 +115,13 @@ const tranformations = [
   'thought was okay'
 ]
 
+// Get a random value from any array
 function getRandomWord(array) {
   const randomIndex = Math.floor(Math.random() * array.length)
   return array[randomIndex]
 }
 
+// Generate a random quote
 function generateQuote() {
   const adjective = getRandomWord(adjectives)
   const object = getRandomWord(objects)
@@ -139,23 +143,23 @@ function generateQuote() {
 }
 
 
-let sliderWrap = document.querySelector('.slider-wrap');
+// Image slider with modal
+let sliderContaier = document.querySelector('.slider-contaier');
 let slider = document.querySelector('.slider');
+let items = [...document.querySelectorAll('.slider-item')];
+let images = [...document.querySelectorAll('.img-div')];
 let clonesWidth;
 let sliderWidth;
 let clones = [];
 let disableScroll = false;
 let scrollPos;
 
-let items = [...document.querySelectorAll('.slider-item')];
-let images = [...document.querySelectorAll('.img-div')];
-
-let backdrop;
-let modal;
-
+// set background images
 images.forEach((image, index) => {
   image.style.backgroundImage = `url(./assets/img/${index + 1}.webp)`;
 });
+
+// clone items for infinite scroll
 items.forEach(item => {
   let clone = item.cloneNode(true);
   clone.classList.add('clone');
@@ -172,13 +176,15 @@ function getClonesWidth() {
   return width;
 }
 
+// get current scroll position
 function getScrollPos() {
   return window.scrollY;
 }
 
+// update scroll position
 function scrollUpdate() {
-  if (window.innerWidth > 768) {
-    sliderWrap.style.overflow = 'hidden';
+  if (window.innerWidth > 768) { // disable scroll on mobile
+    sliderContaier.style.overflow = 'hidden';
     scrollPos = getScrollPos();
     if (clonesWidth + scrollPos >= sliderWidth) {
       window.scrollTo({top: 1})
@@ -186,13 +192,16 @@ function scrollUpdate() {
       window.scrollTo({top: sliderWidth - clonesWidth - 1})
     }
     slider.style.transform = `translateX(${-window.scrollY}px)`;
-    requestAnimationFrame(scrollUpdate);
+    requestAnimationFrame(scrollUpdate); // call scrollUpdate() on next available frame
   } else {
-    sliderWrap.style.overflow = 'scroll';
+    sliderContaier.style.overflow = 'scroll';
   }  
 }
 
 // modal
+
+let backdrop;
+let modal;
 
 // Setup event listener on the slider container
 slider.addEventListener('click', function(event) {
@@ -204,10 +213,12 @@ slider.addEventListener('click', function(event) {
   }
 });
 
+// Open and close modal functions
 function openModal(index) {
   let quote = generateQuote()
   let attributedTo = getRandomWord(historicalFigures)
 
+  // Create backdrop and modal elements
   backdrop = document.createElement('div');
   backdrop.classList.add('backdrop');
   document.body.appendChild(backdrop);
@@ -233,8 +244,10 @@ function closeModal() {
 
 // event listeners
 
+// ensure slider width is correct on resize
 window.addEventListener('resize', onLoad);
 
+// scroll event listener
 function onLoad() {
   calculateDimensions();
   window.scrollTo({top: 1});
@@ -242,13 +255,10 @@ function onLoad() {
   scrollUpdate();
 }
 
+// calculate dimensions
 function calculateDimensions() {
   sliderWidth = slider.getBoundingClientRect().width;
   clonesWidth = getClonesWidth();
 }
 
 onLoad();
-
-
-
-console.log(generateQuote())
