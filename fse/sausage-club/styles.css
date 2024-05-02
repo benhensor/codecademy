@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'koowalsky';
-  src: url('./assets/fonts/koowalsky/Koowalsky.ttf') format('truetype');
+  src: url('../../assets/fonts/koowalsky/Koowalsky.ttf') format('truetype');
 }
 @font-face {
   font-family: 'little-orion';
-  src: url('./assets/fonts/little-orion/Little Orion.otf') format('opentype');
+  src: url('../../assets/fonts/little-orion/Little Orion.otf') format('opentype');
 }
 
 * {

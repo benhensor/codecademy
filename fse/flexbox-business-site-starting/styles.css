@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'SulphurPoint';
-  src:  url('./assets/fonts/sulphur_point/SulphurPoint-Light.ttf') format('truetype'),
-        url('./assets/fonts/sulphur_point/SulphurPoint-Regular.ttf') format('truetype'),
-        url('./assets/fonts/sulphur_point/SulphurPoint-Bold.ttf') format('truetype');
+  src:  url('../../assets/fonts/sulphur_point/SulphurPoint-Light.ttf') format('truetype'),
+        url('../../assets/fonts/sulphur_point/SulphurPoint-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/sulphur_point/SulphurPoint-Bold.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Poppins';
-  src:  url('./assets/fonts/poppins/Poppins-Light.ttf') format('truetype'),
-        url('./assets/fonts/poppins/Poppins-Regular.ttf') format('truetype'),
-        url('./assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
+  src:  url('../../assets/fonts/poppins/Poppins-Light.ttf') format('truetype'),
+        url('../../assets/fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+        url('../../assets/fonts/poppins/Poppins-Bold.ttf') format('truetype');
 }
 
 /* VARIABLES */

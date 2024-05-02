@@ -1,15 +1,15 @@
 @font-face {
   font-family: 'Arimo' ;
-  src: url('../assets/fonts/Arimo/Arimo-Regular.ttf') format('truetype'),
-       url('../assets/fonts/Arimo/Arimo-Bold.ttf') format('truetype'),
-       url('../assets/fonts/Arimo/Arimo-Italic.ttf') format('truetype'),
-       url('../assets/fonts/Arimo/Arimo-Medium.ttf') format('truetype');
+  src: url('../../assets/fonts/arimo/Arimo-Regular.ttf') format('truetype'),
+       url('../../assets/fonts/arimo/Arimo-Bold.ttf') format('truetype'),
+       url('../../assets/fonts/arimo/Arimo-Italic.ttf') format('truetype'),
+       url('../../assets/fonts/arimo/Arimo-Medium.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Poppins';
-  src: url('../assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype'),
-       url('../assets/fonts/Poppins/Poppins-Bold.ttf') format('truetype'),
-       url('../assets/fonts/Poppins/Poppins-Light.ttf') format('truetype');
+  src: url('../../assets/fonts/poppins/Poppins-Regular.ttf') format('truetype'),
+       url('../../assets/fonts/poppins/Poppins-Bold.ttf') format('truetype'),
+       url('../../assets/fonts/poppins/Poppins-Light.ttf') format('truetype');
 }
 
 :root {
