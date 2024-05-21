@@ -440,6 +440,9 @@ section .item::before {
 #mixed-messages::before {
   background: linear-gradient(154deg, #004aaa, #00fbff);
 }
+#jam::before {
+  background: linear-gradient(215deg, #d500ab, #ff8400);
+}
 
 /* JAVASCRIPT */
 
