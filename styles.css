@@ -443,6 +443,9 @@ section .item::before {
 #jam::before {
   background: linear-gradient(215deg, #d500ab, #ff8400);
 }
+#flashcards::before {
+  background: linear-gradient(86deg, #79d500, #ffe100);
+}
 
 /* JAVASCRIPT */
 
