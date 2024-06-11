@@ -452,6 +452,9 @@ section .item::before {
 #number-guesser::before {
   background: linear-gradient(45deg, #9011f1, #f5ba19);
 }
+#find-your-hat::before {
+  background: linear-gradient(87deg, #76f111, #f56d19);
+}
 
 section .item-content {
   display: flex;
